@@ -1,6 +1,6 @@
 import json
 from langchain.schema import Document
-from langchain.vectorstores import FAISS, Pinecone
+from langchain.vectorstores import FAISS
 
 class VectorStoreRetrieverFaiss:
     '''
@@ -40,20 +40,3 @@ class VectorStoreRetrieverFaiss:
     
     def get_retriever(self):
         return self.vs_retriever
-    
-class VectorStoreRetrieverPinecone:
-    '''
-    Pinecone is a wrapper around Pinecone that allows for easy addition of functions and queries
-    '''
-
-    def __init__():
-        pass
-
-    def add_functions():
-        pass
-
-    def find_functions():
-        pass
-
-    def get_retriever():
-        pass

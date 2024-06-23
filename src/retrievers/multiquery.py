@@ -1,4 +1,3 @@
-from .vectorstore import VectorStoreRetriever
 from pydantic import BaseModel, Field
 from langchain.output_parsers import PydanticOutputParser
 from langchain.retrievers.multi_query import MultiQueryRetriever

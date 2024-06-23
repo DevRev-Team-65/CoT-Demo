@@ -1,7 +1,7 @@
 # Framework Requirements
 import streamlit as st
 import json
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain.embeddings import OpenAIEmbeddings
 from langchain.chat_models import ChatOpenAI
 import os
 import logging
@@ -35,8 +35,6 @@ st.title("AI Agent 007")
 
 openai_api_key = st.sidebar.text_input("OpenAI API Key", value="", type="password")
 
-hf_embeddings = HuggingFaceEmbeddings()
-
 example_str = "".join(
     [
         f"""
@@ -65,8 +63,10 @@ with st.spinner("Initializing Components...."):
         temperature=0.7,
     )
 
+    oai_embeddings = OpenAIEmbeddings(openai_api_key)
+
     vector_store = VectorStoreRetrieverFaiss(
-        hf_embeddings,
+        oai_embeddings,
         name = "vs_ret_01",
         init_functions=devrev_functions.copy()
     )

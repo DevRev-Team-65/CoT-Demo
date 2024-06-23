@@ -5,5 +5,5 @@ from .vectorstore import VectorStoreRetrieverFaiss
 __all__ = [
     'CustomContextualCompressionRetriever',
     'CustomMultiQueryRetriever',
-    'VectorStoreRetriever'
+    'VectorStoreRetrieverFaiss'
 ]

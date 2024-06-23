@@ -1,4 +1,3 @@
-from .vectorstore import VectorStoreRetriever
 from langchain.retrievers import ContextualCompressionRetriever
 from langchain.retrievers.document_compressors import LLMChainExtractor
 
