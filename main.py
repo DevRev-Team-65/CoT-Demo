@@ -63,7 +63,7 @@ with st.spinner("Initializing Components...."):
         temperature=0.7,
     )
 
-    oai_embeddings = OpenAIEmbeddings(openai_api_key)
+    oai_embeddings = OpenAIEmbeddings(api_key=openai_api_key)
 
     vector_store = VectorStoreRetrieverFaiss(
         oai_embeddings,

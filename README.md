@@ -36,6 +36,7 @@ The application is structured with a user-friendly interface and robust backend 
 
 ### Usage
 
+1. **Run the app:** Run the app using `streamlit main.py`.
 1. **OpenAI API Key:** Enter your OpenAI API Key in the sidebar.
 2. **Function Addition:** Use the sidebar form to add custom functions.
     - Enter the function name, description, and parameters.
